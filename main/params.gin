@@ -1,0 +1,29 @@
+# Parameters for train_eval:
+# ==============================================================================
+train_eval.agent_name = 'ddpg'
+# sac, dqn, ddpg
+
+train_eval.input_names=['camera', 'lidar']
+train_eval.mask_names=['birdeye']
+train_eval.observations = ['input']
+# 'input', 'mask'
+
+train_eval.initial_collect_steps = 1000
+train_eval.num_iterations = 20000
+train_eval.batch_size = 1
+train_eval.sequence_length = 1
+
+train_eval.num_eval_episodes = 2
+train_eval.eval_interval = 500
+train_eval.summary_interval = 100
+train_eval.log_interval=100
+ 
+train_eval.train_checkpoint_interval = 5000
+train_eval.policy_checkpoint_interval = 5000
+train_eval.rb_checkpoint_interval = 5000
+train_eval.action_repeat=4
+
+# Parameters for load_carla_env:
+# ==============================================================================
+load_carla_env.max_time_episode=500
+load_carla_env.port=2000
