@@ -1,1 +1,1 @@
-# deep_rl_with_carla
+# Deep Reinforcement Learning (RL) for end-to-end autonomous driving in Carla simulation environment
